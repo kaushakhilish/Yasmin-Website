@@ -1,5 +1,11 @@
 /* Reset some default styles */
-body, h1, h2, h3, p, ul, li {
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
     margin: 0;
     padding: 0;
 }
@@ -12,12 +18,15 @@ body {
 }
 
 header {
-    background-color: #5C5470; /* Change background color to light pink */
-    color: #fff;
+    background-color: pink;
+    /* Change background color to light pink */
+    /* color: #fff; */
     padding: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-decoration: none;
+    height: 100px;
 }
 
 nav ul {
@@ -31,7 +40,7 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: #fff;
+    color: #000;
     font-weight: bold;
 }
 
@@ -43,26 +52,29 @@ nav a {
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #5C5470 /* Change background color to light pink */
-    color: #fff;
+    background-color: pink;
+    /* Change background color to light pink */
+    /* color: #fff; */
 }
 
 /* Other styles remain the same */
 
 .logo {
     text-align: center;
-    padding: 2rem 0;
+    /* padding: 2rem 0; */
 }
 
 .logo img {
     max-width: 100%;
     height: auto;
-    width: 50%; /* Adjust this value as needed */
+    width: 100px;
+    height: 100px;
 }
 
 .products {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Display 3 products in each row */
+    grid-template-columns: repeat(3, 1fr);
+    /* Display 3 products in each row */
     gap: 20px;
     padding: 20px;
 }
@@ -89,8 +101,10 @@ footer {
 .logo-section img {
     max-width: 100%;
     height: auto;
-    width: 30%; /* Adjust this value as needed */
+    width: 30%;
+    /* Adjust this value as needed */
 }
+
 /* Contact section styles */
 .content {
     text-align: center;
