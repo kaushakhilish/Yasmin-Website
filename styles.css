@@ -136,7 +136,7 @@ main {
 }
 
 /* Add this CSS for the modal */
-.modal {
+/* .modal {
     display: none;
     position: fixed;
     top: 0;
@@ -147,14 +147,55 @@ main {
     z-index: 1;
     justify-content: center;
     align-items: center;
+} */
+
+.modal {
+    display: none;
+    /* Hide the modal by default */
+    position: fixed;
+    top: 0;
+    /* Start outside of the viewport on the left */
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Semi-transparent background overlay */
+    z-index: 999;
+    /* Ensure the modal is on top of other content */
+    overflow-x: hidden;
+    /* Prevent horizontal scrolling */
+    transition: left 0.3s ease;
+    /* Slide-in animation */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
 }
 
 .modal-content {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background-color: #f8f8f8;
+    padding: 20px;
+}
+
+/* .modal-content {
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
+} */
 
 .contact-info {
     width: 100%;
@@ -252,6 +293,8 @@ main {
     cursor: pointer;
 }
 
+
+
 /* Add this CSS for the menu button */
 .menu-icon {
     display: none;
@@ -271,6 +314,9 @@ main {
     }
 }
 
+.modal.open {
+    left: 0;
+}
 
 .bottom-row li {
     margin-right: 20px;
@@ -302,6 +348,11 @@ main {
         display: flex;
         justify-content: flex-end;
         /* Push icons to the right */
+        align-items: center;
+    }
+
+    .products {
+        padding: 0 !important;
         align-items: center;
     }
 
