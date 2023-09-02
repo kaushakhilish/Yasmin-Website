@@ -5,15 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <title>Contact Us - YourMinestory</title>
 </head>
 
 <body>
     <header>
-        <div class="logo">
-            <img src="your mine story.jpg" alt="Fashion Store Logo">
+        <!-- First Row -->
+        <div class="top-row">
+            <div class="menu-icon">
+                <i class="fas fa-bars"></i> <!-- Hamburger menu icon -->
+            </div>
+            <div class="search-icon">
+                <i class="fas fa-search"></i> <!-- Search icon -->
+            </div>
+            <div class="logo">
+                <img src="your_mine_story.png" alt="Fashion Store Logo" width="200" height="200">
+            </div>
+            <div class="icons">
+
+                <div class="shopping-cart">
+                    <i class="fas fa-shopping-cart"></i> <!-- Shopping cart icon -->
+                </div>
+            </div>
         </div>
-        <nav>
+
+        <!-- Second Row -->
+        <nav class="bottom-row">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="products.html">Products</a></li>
@@ -24,18 +43,53 @@
         </nav>
     </header>
 
-    <section class="content">
-        <h2>Contact Us</h2>
-        <address>
-            <strong>HEAD OFFICE</strong><br>
-            YOUR MINE STORY CLOTHING COMPANY<br>
-            E-14/2301/736/2/1<br>
-            Bahadur Ke Road Dyeing Complex, Ludhiana.
-        </address>
-        <p><strong>CUSTOMER CARE NUMBER:</strong> +91 7888778909<br>
-            Working Hours: 10AM To 6PM.</p>
-        <p><strong>EMAIL:</strong> yourminestory@gmail.com</p>
-    </section>
+
+    <main class="main">
+        <section class="contact-info">
+            <h2>Contact Us</h2>
+            <address>
+                <strong>HEAD OFFICE</strong><br>
+                YOUR MINE STORY CLOTHING COMPANY<br>
+                E-14/2301/736/2/1<br>
+                Bahadur Ke Road Dyeing Complex, Ludhiana.
+            </address>
+            <p><strong>CUSTOMER CARE NUMBER:</strong> +91 7888778909</p><br>
+            <p><strong> Working Hours: 10AM To 6PM.</strong></p><br>
+            <p><strong>EMAIL:</strong> yourminestory@gmail.com</p>
+        </section>
+        <section class="contact-form-section">
+            <h2>Contact</h2>
+            <form class="custom-contact-form">
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-item">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name">
+                        </div>
+                        <div class="input-group-item">
+                            <label for="email">Email <span>*</span></label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9\-]*" placeholder="Enter your phone number">
+                </div>
+                <div class="form-group">
+                    <label for="comment">Comment</label>
+                    <textarea id="comment" name="comment" rows="5" placeholder="Enter your comment"></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="custom-button">Send</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+
+
+
 
     <footer>
         <p>&copy; 2023 YourMinestory. All rights reserved.</p>
